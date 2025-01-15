@@ -2,12 +2,19 @@
 
 int main()
 {
-    int num;
-    printf("請輸入整數值 : ");
-    scanf("%d", &num);
-    if (num < 0)
-        num = -num;
-        printf("絕對值是 %d\n", num);
+    int sc;
+    printf("請輸入分數 : ");
+    scanf("%d", &sc);
+    if (sc >= 90)
+        printf(" a \n");
+    else if (sc >= 80)
+        printf(" b \n");
+    else if (sc >= 70)
+        printf(" c \n");
+    else if (sc >= 60)
+        printf(" d \n");
+    else
+        printf(" f \n");
     
     getchar();
     return 0;
