@@ -2,24 +2,16 @@
 
 int main()
 {
-    int i;
-    printf("1. Access   .....\n");
-    printf("2. Excel    .....\n");
-    printf("3. Word     .....\n");
-    printf("請選擇 ==> ");
-    scanf("%d" ,&i);
-    printf("\n");
-    switch( i )
-    {
-        case 1: printf("Access 是資料庫軟體 \n");
-            break;
-        case 2: printf("Excel 是試算表軟體 \n");
-            break;
-        case 3: printf("Word 文書處理軟體 \n");
-            break;
-        default:
-            printf("選擇錯誤 \n");
-    }
+    int i,j;
+
+start:
+    printf("請輸入 2 個數字 \n==> ");
+    scanf("%d%d",&i,&j);
+    if( i > j ) /* 如果第 1 數字大於第 2 數字 */
+        goto stop; /* 跳至 stop 程式結束 */
+    goto start;
+stop:
+    printf("程式結束 \n");    
     getchar();
     return 0;
 
