@@ -2,20 +2,12 @@
 
 int main()
 {
-    int sc;
-    printf("請輸入分數 : ");
-    scanf("%d", &sc);
-    if (sc >= 90)
-        printf(" a \n");
-    else if (sc >= 80)
-        printf(" b \n");
-    else if (sc >= 70)
-        printf(" c \n");
-    else if (sc >= 60)
-        printf(" d \n");
-    else
-        printf(" f \n");
-    
+    int a,b,c;
+
+    printf("請輸入任意 2 數字 ==> ");
+    scanf("%d%d", &a,&b);
+    c = ( a > b ) ? a : b;
+    printf("較大值是 %d \n",c);
     getchar();
     return 0;
 
